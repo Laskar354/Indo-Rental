@@ -16,6 +16,7 @@ body {
     font-family: "Poppins", sans-serif;
     background-color: var(--bg);
     color: #000;
+    min-height: 2000px;
 }
 
 /* Navbar */
@@ -52,7 +53,7 @@ body {
     transition: 0.4s;
 }
 .navbar .navbar-nav a:hover::after {
-    transform: scaleX(1);
+    transform: scaleX(0.5);
 }
 
 .navbar .navbar-extra a {
@@ -65,4 +66,176 @@ body {
 
 #menu {
     display: none;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.hero::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(252, 249, 249, 1) 8%, rgba(255, 255, 255, 0) 70%);
+}
+
+.hero .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+}
+
+.hero .content h1 {
+    font-size: 3rem;
+    color: #fff;
+    line-height: 1.2;
+    text-shadow: 1px 1px 5px rgba(236, 11, 11, 0.8);
+}
+.hero .content p {
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.2;
+    text-shadow: 1px 1px 5px rgba(236, 11, 11, 0.8);
+    margin-top: 5px;
+    font-weight: 200;
+    mix-blend-mode: difference;
+}
+.hero .content .btnRental {
+    display: inline-block;
+    padding: 1rem 3rem;
+    margin-top: 20px;
+    background-color: #ff0000;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.8);
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Section Rental */
+.rental {
+    padding: 8rem 7% 1.4rem;
+}
+.rental h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+.rental .row {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.rental .row .rental-card {
+    box-shadow: 0 0 10px #1f1f1f;
+    padding: 20px 20px;
+    border-radius: 10px;
+    margin: 2rem 1rem;
+}
+.rental .row .rental-card:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.rental .row .rental-card img
+{
+    width: 400px;
+}
+.rental .row .rental-card p
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    height: 30px;
+}
+.rental .row .rental-card p span
+{
+    color: #ff0000;
+}
+
+.rental .row .rental-card .sub {
+    display: flex;
+    font-weight: 100;
+    justify-content: space-between;
+}
+.rental .row .rental-card a
+{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1f1f1f;
+    padding: 0.5rem 1rem;
+    background-color: #25D366;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    display: block;
+    text-align: center;
+}
+
+
+
+
+
+
+/* Ukuran Media */
+/* Laptop */
+@media (max-width: 1366px ) {
+    html {
+        font-size: 75%;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px ) {
+    html {
+        font-size: 62.5%;
+    }
+    .navbar .logo img {
+        width: 40px;
+    }
+
+    #menu {
+        display: inline-block;
+    }
+    .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 100vh;
+        background-color: #474747;
+        transition: 0.4s ease-in-out;
+    }
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .navbar .navbar-nav a {
+        display: block;
+        font-size: 18px;
+        margin: 0.5rem 10px;
+        padding: 10px 10px;
+    }
+    .navbar .navbar-nav a::after {
+        transform-origin: 0 0;
+    }
+    .navbar .navbar-nav a:hover::after {
+        transform: scaleX(0.2);
+    }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px ) {
+    html {
+        font-size: 55%;
+    }
+    .navbar .logo img {
+        width: 28px;
+    }
 }
