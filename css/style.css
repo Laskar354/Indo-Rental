@@ -16,7 +16,7 @@ body {
     font-family: "Poppins", sans-serif;
     background-color: var(--bg);
     color: #000;
-    min-height: 2000px;
+    /* min-height: 2000px; */
 }
 
 /* Navbar */
@@ -172,7 +172,7 @@ body {
     font-weight: 100;
     justify-content: space-between;
 }
-.rental .row .rental-card a
+.rental .row .rental-card .wa
 {
     font-size: 1.3rem;
     font-weight: 600;
@@ -186,6 +186,221 @@ body {
 }
 
 
+/* Section Tour */
+
+
+.tour {
+    padding: 8rem 7% 1.4rem;
+}
+.tour h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.tour .row {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.tour .row .tour-card {
+    box-shadow: 0 0 10px #1f1f1f;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    margin: 2rem 1rem;
+}
+.tour .row .tour-card img {
+    width: 400px;
+}
+
+.tour .row .tour-card .wa {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1f1f1f;
+    padding: 0.5rem 1rem;
+    background-color: #25D366;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    display: block;
+    text-align: center;
+}
+.tour .row .tour-card:hover {
+    background-color: rgba(0, 0, 0, 0.1)
+}
+.tour .row .tour-card .waktu {
+    position: absolute;
+    font-size: 0.8rem;
+    padding: 2px 8px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-weight: 200;
+    border-bottom-right-radius: 8px;
+}
+
+/* Section About start */
+.about {
+    padding: 8rem 7% 1.4rem;
+}
+.about h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+.about .row {
+    display: flex;
+    margin-top: 3rem;
+}
+.about .row .img-about {
+    flex: 1 1 35rem;
+    margin: 0 3rem;
+}
+.about .row .img-about img {
+    width: 100%;
+    border: 8px solid #000000;
+    border-radius: 10px;
+}
+.about .row .content {
+    flex: 1 1 45rem;
+    margin: 0 3rem;
+}
+.about .row .content h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+.about .row .content p {
+    font-weight: 400;
+    line-height: 2;
+}
+/* Section About end */
+
+
+/* Single Rental start */
+.single-rental {
+    padding: 8rem 20% 2rem;
+}
+.single-rental .row {
+    display: flex;
+}
+.single-rental .row .img-single-rental {
+    flex: 1 1 35rem;
+    margin: 0 1rem;
+
+}
+.single-rental .row .img-single-rental img {
+    width: 100%;
+}
+.single-rental .row .content-single-rental {
+    flex: 1 1 35rem;
+    margin: 0 1rem;
+}
+.single-rental .row .content-single-rental .tblRental {
+    border-collapse: collapse;
+    width: 100%;
+    border: 0px;
+}
+.single-rental .row .content-single-rental .tr {
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+}
+.single-rental .row .content-single-rental thead {
+    font-weight: bold;
+}
+.single-rental .row .content-single-rental a {
+    display: block;
+    text-align: center;
+    background-color: #25D366;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1f1f1f;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+}
+.single-rental .row .content-single-rental .jdl-ket {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+}
+/* Single Rental end */
+
+/* Single Rental start */
+.single-tour {
+    padding: 8rem 20% 2rem;
+}
+.single-tour .row {
+    display: flex;
+}
+.single-tour .row .img-single-tour {
+    flex: 1 1 35rem;
+    margin: 0 1rem;
+
+}
+.single-tour .row .img-single-tour img {
+    width: 100%;
+}
+.single-tour .row .content-single-tour {
+    flex: 1 1 35rem;
+    margin: 0 1rem;
+}
+.single-tour .row .content-single-tour .tr {
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+}
+.single-tour .row .content-single-tour thead {
+    font-weight: bold;
+}
+.single-tour .row .content-single-tour a {
+    display: block;
+    text-align: center;
+    background-color: #25D366;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1f1f1f;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+}
+.single-tour .row .content-single-tour .jdl-ket {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.single-tour .row .content-single-tour form {
+    width: 100%;
+}
+.single-tour .row .content-single-tour form label {
+    display: block;
+    margin-bottom: 8px;
+}
+.single-tour .row .content-single-tour form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #1f1f1f;
+}
+.single-tour .row .content-single-tour form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+.single-tour .row .content-single-tour form button {
+    background-color: #ff0000;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #1f1f1f;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.single-tour .row .content-single-tour form button:hover {
+    background-color: #45a049;
+}
+/* Single Tour end */
 
 
 
@@ -234,6 +449,22 @@ body {
     }
     .navbar .navbar-nav a:hover::after {
         transform: scaleX(0.2);
+    }
+    .about .row {
+        flex-wrap: wrap;
+    }
+    .about .row .content h3 {
+        font-size: 1.8rem;
+        margin-top: 3rem;
+    }
+    .about .row .content p {
+        font-size: 1.5rem;
+    }
+    .single-rental .row {
+        flex-wrap: wrap;
+    }
+    .single-tour .row {
+        flex-wrap: wrap;
     }
 }
 
